@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Youtube Transcript Summariser</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Your existing CSS code */
+        body {
+            /* Gradient background for the body */
+            background: linear-gradient(to right, rgb(34, 127, 80), hsl(30, 14%, 97%));
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            /* Styling for the heading */
+            color: #333;
+            text-align: center;
+        }
+        label {
+            /* Styling for the label */
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            /* Styling for the input field */
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        /* Styling for the buttons */
+        #summarise {
+            background: linear-gradient(to right, #68daab, #68daab);
+        }
+        #translate {
+            background: linear-gradient(to right, #68daab,#68daab);
+        }
+        #listen {
+            background: linear-gradient(to right,#68daab,#68daab);
+        }
+        button {
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            /* Change button style on hover */
+            opacity: 0.8;
+        }
+        #output {
+            /* Styling for the output paragraph */
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Styling for the icon in the heading */
+        h1 img {
+            margin-left: 10px;
+            width: 32px;
+            height: 32px;
+        }
+        .container {
+            width: 100%; /* Set the width as per your preference */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- Add this container div -->
+        <h1>
+            Youtube Transcript Summariser
+            <img src="icons/icon48.png" alt="Extension Icon">
+        </h1>
+        <label for="videoUrl">Enter YouTube Video URL:</label>
+        <input type="text" id="videoUrl" placeholder="Paste YouTube Video URL">
+        <button id="summarise" type="button">Summarise</button>
+        <br/>
+        <p id="output"></p>
+        <button id="translate" type="button">Translate</button>
+        <button id="listen" type="button">Listen</button>
+        <script src="pop.js"></script>
+    </div> <!-- Close the container div -->
+</body>
+</html>
